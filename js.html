@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1:编写一个程序，输入一个数字（0~100）当数字为100输出“特别优秀”，90以上优秀，80以上90以下很好
+        // 70以上80以下好，60以上70以下不错，60以下有待提高
+        var num = prompt("请输入你的成绩：");
+        if (num == 100) {
+            alert("你的成绩特别优秀！希望你能继续保持！");
+        } else if (num > 90) {
+            alert("你的成绩优秀!");
+        } else if (num > 80) {
+            alert("你的成绩很好！");
+        } else if (num > 70) {
+            alert("你的成绩好！但是还有提升空间！");
+        } else if (num > 60) {
+            alert ("你的成绩不错，但是在不努力就不及格了哦!");
+        } else {
+            alert("你的成绩不及格，希望你要加油了哦！");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
