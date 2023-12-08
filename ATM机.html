@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM机</title>
+    <script>
+        var balance = 100;          // 余额
+        var saveMoney = '1';
+        var drawMoney = '2';
+        // balance inquiry 查询余额
+        var balanceInquiry = '3';
+        var quit = '4';
+        do {
+            var num = prompt('Please enter a number!(1:存钱 2：取钱 3：查询余额 4：退出)');
+            switch (num) {
+                case '1':
+                    balance += prompt('请输入要存的金额：') * 1;
+                    break;
+                case '2':
+                    drawMoneyNum = prompt('请输入要取的金额：') * 1;
+                    if (drawMoneyNum <= balance){
+                        balance -= drawMoneyNum;
+                    }else {
+                        alert("哇哦！余额不足！奋斗吧！年轻人！")
+                    }
+                    
+                    break;
+                case '3':
+                    alert('你的余额为：' + balance)
+                    break;
+                case '4':
+                    break;
+                default:
+                    alert('你的输入有误！请重新输入！！！')
+
+
+            }
+         } while (num != '4')
+
+        
+           
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
