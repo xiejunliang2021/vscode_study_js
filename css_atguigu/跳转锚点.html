@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转锚点</title>
+   
+
+</head>
+<body>
+    <!-- 第一种锚点的写法，锚点连接中的href前面用“#”标记，在目标位置的前面（在中间和结尾都可以，
+        看你想跳转到什么地方）添加a标签，中间的href属性名字改为name -->
+    <a href="#img2">点我跳转到img2</a>   
+    
+    
+    <a href="#img4">点我跳转到img4</a>
+
+    <div>
+        <h3>img1</h3>
+        <img src="./img/p1.jpg" alt="img1">
+
+    </div>
+
+
+    <!-- 这个地方其实是一个空标签，里面不写任何值，但是herf属性要改为name，区分大小写 -->
+    <a name="img2"></a>             
+    <div>
+        <h3>img2</h3>
+        <img src="./img/p2.jpg" alt="img1">
+        
+    </div>
+    <div>
+        <h3>img3</h3>
+        <img src="./img/p8.jpg" alt="img1">
+        
+    </div>
+    <div id="img4">
+        <h3>img4</h3>
+        <img src="./img/p4.jpg" alt="img1">
+        
+    </div>
+
+    <!-- href中写#号后面不带任何值就直接返回到顶部 -->
+    <a href="#">回到顶部</a>
+    <br>
+
+    <!-- href中不写任何值的话也能回到顶部，但是它是刷新的效果 -->
+    <a href="">回到顶部</a>
+
+    <!-- 也可以在其它页面中回到指定的锚点 -->
+    <a href="./跳转锚点02.html#xieannan">谢安楠</a>    
+</body>
+</html>

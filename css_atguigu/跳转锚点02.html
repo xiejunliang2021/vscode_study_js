@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转锚点</title>
+    <style>
+        img {
+            width: 900px;
+            height: 600px;
+        }
+    </style>
+   
+
+</head>
+<body>
+    <!-- 第一种锚点的写法，锚点连接中的href前面用“#”标记，在目标位置的前面（在中间和结尾都可以，
+        看你想跳转到什么地方）添加a标签，中间的href属性名字改为name -->
+    <a href="#xieanqi">谢安琪</a>   
+    <a href="#xieannan">谢安楠</a>
+    
+
+    <div id="me">
+        <h3>谢钧亮</h3>
+        <img src="./img/xiejunliang.JPG" alt="xiejunliang">
+
+    </div>
+
+
+    <!-- 这个地方其实是一个空标签，里面不写任何值，但是herf属性要改为name，区分大小写 -->
+    <a name="wife"></a>             
+    <div>
+        <h3>曹耕耘</h3>
+        <img src="./img/caogengyun.jpg" alt="caogengyun">
+        
+    </div>
+    <div id="xieanqi">
+        <h3>谢安琪</h3>
+        <img src="./img/xieanqi.JPG" alt="xieanqi">
+        
+    </div>
+
+    <div >
+        <h3 id="xieannan">谢安楠</h3>
+        <img src="./img/xieannan.JPG" alt="xieannan">
+        
+    </div>
+
+    <!-- href中写#号后面不带任何值就直接返回到顶部 -->
+    <a href="#">回到顶部</a>
+    <br>
+
+    <!-- href中不写任何值的话也能回到顶部，但是它是刷新的效果 -->
+    <a href="">回到顶部</a>
+ 
+</body>
+</html>

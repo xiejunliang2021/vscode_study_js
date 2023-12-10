@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渲染表格</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            height: 30px;
+            width: 500px;
+            background-color: #5c5757;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b10c0c;
+        }
+        th{
+            background-color: #920707;
+            color: #f0d1e3;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            text-align: center;
+            
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <script>
+        document.write(`
+        <div>
+            <h1>股票行情图</h1>
+            <table>
+                <tr>
+                    <th>股票名称</th>
+                    <th>股票代码</th>
+                    <th>开盘价格</th>
+                    <th>收盘价格</th>
+                    <th>最高价格</th>
+                    <th>最低价格</th>
+                </tr>
+            `)
+
+        // 声明一个对象
+        let arr = [
+            { uname: "中国中冶", symb: "sh601618", open: 3.29, close: 3.34, high: 3.37, low: 3.25 },
+            { uname: "中国中建", symb: "sh601619", open: 3.24, close: 3.35, high: 3.39, low: 3.23 },
+            { uname: "中国中铁", symb: "sh601620", open: 3.25, close: 3.36, high: 3.38, low: 3.22 },
+            { uname: "惠程科技", symb: "sh601621", open: 3.26, close: 3.37, high: 3.34, low: 3.21 },
+            { uname: "淮北矿业", symb: "sh601613", open: 3.27, close: 3.38, high: 3.35, low: 3.20 }
+        ]
+
+
+        
+        for (let i = 0; i < arr.length; i++) {
+            // console.log(arr[i])
+            // for (let k in arr[i]) {
+            //     // console.log(arr[i][k])
+            document.write(`
+            <tr>
+                <td>${arr[i]['uname']}</td>
+                <td>${arr[i].symb}</td> 
+                <td>${arr[i].open}</td> 
+                <td>${arr[i].close}</td> 
+                <td>${arr[i].high}</td> 
+                <td>${arr[i].low}</td>     
+            </tr>
+            `)
+            }
+        
+        document.write('</table>')
+        document.write('</div>')
+    </script>
+
+
+</body>
+
+</html>
